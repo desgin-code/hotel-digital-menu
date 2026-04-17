@@ -1,0 +1,158 @@
+.section {
+  margin-bottom: 40px;
+}
+
+.header-section {
+  width: 100%;
+  padding: 10px 33px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-section .nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.header-section .logo-toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-section .logo {
+  width: 60px;
+  font-weight: bold;
+  color: #333;
+}
+
+.header-section .toggle {
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+}
+
+.header-section .search-box {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.header-section .search-box input {
+  width: 60%;
+  max-width: 400px;
+  padding: 8px 16px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.header-section .search-box input:focus {
+  border-color: #ff9800;
+  box-shadow: 0 0 5px rgba(255, 152, 0, 0.5);
+}
+
+.header-section .auth .sign-in {
+  background: #5c471c;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.3s ease;
+}
+
+.header-section .auth .sign-in:hover {
+  background: #e68900;
+}
+
+
+
+
+.footer {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  background: #333;
+  color: #fff;
+  font-size: 14px;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.animate-slide-up {
+  animation: slide-up 0.4s ease-out;
+}
+
+.animate-slideUp {
+  animation: slideUp 0.3s ease-out;
+}
+
+
+.category-slider .slick-slide {
+  display: inline-block !important;
+  width: auto !important;
+  margin-right: 20px !important;
+}
+
+.category-slider .slick-track {
+  width: unset !important;
+  display: flex !important;
+}
+
+@media (max-width: 768px) {
+  .logo-toggle .logo {
+    display: none;
+  }
+  .header-section {
+    padding-top: 20px;
+  }
+  .header-section .search-box input {
+    width: 100%;
+  }
+  .food-category-section {
+    top: 70px;
+  }
+  
+}
+
+@media(max-width:450px) {
+  .cart-item .item-price{
+    flex-direction:column;
+  }
+}
+
+@media (max-width: 350px) {
+  .flex-col-350 {
+    flex-direction: column;
+  }
+}
