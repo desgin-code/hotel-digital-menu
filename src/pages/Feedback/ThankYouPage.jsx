@@ -14,13 +14,13 @@ function ThankYouPage() {
 
 
   const bannerImageUrl = hotel?.banner?.image
-    ? `https://testing-demo.com/jaichand/digital-menu/public/uploads/hotel/banner/${hotel.banner.image}`
+    ? `https://manage.hotelsdigitalmenu.com/public/uploads/hotel/banner/${hotel.banner.image}`
     : 'https://images.unsplash.com/photo-1600891964599-f61ba0e24092';
 
   const fetchFeedbackMessage = async () => {
     try {
       const response = await fetch(
-        `https://testing-demo.com/jaichand/digital-menu/api/hotel/feedback-thank-you-message/${hotel_id}`
+        `https://manage.hotelsdigitalmenu.com/api/hotel/feedback-thank-you-message/${hotel_id}`
       );
       const result = await response.json();
       const data = result.data;
@@ -46,7 +46,7 @@ function ThankYouPage() {
       <header className="flex justify-center items-center  bg-white shadow-md">
         {hotel?.logo ? (
           <img
-            src={`https://testing-demo.com/jaichand/digital-menu/public/uploads/hotel/logo/${hotel.logo}`}
+            src={`https://manage.hotelsdigitalmenu.com/public/uploads/hotel/logo/${hotel.logo}`}
             alt={hotel?.name || "Hotel Logo"}
             className="h-14 object-contain"
           />

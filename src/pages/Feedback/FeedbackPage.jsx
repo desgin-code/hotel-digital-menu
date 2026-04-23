@@ -24,7 +24,7 @@ function FeedbackPage() {
 
   const fetchFeedbackQuestion = async () => {
     const response = await fetch(
-      `https://testing-demo.com/jaichand/digital-menu/api/hotel/feedback/${hotel_id}`
+      `https://manage.hotelsdigitalmenu.com/api/hotel/feedback/${hotel_id}`
     );
     const result = await response.json();
 
@@ -84,7 +84,7 @@ function FeedbackPage() {
 
     try {
       const response = await fetch(
-        "https://testing-demo.com/jaichand/digital-menu/api/hotel/store-feedback-response",
+        "https://manage.hotelsdigitalmenu.com/api/hotel/store-feedback-response",
         {
           method: "POST",
           body: formData, // Do NOT set Content-Type manually
